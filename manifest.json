@@ -1,0 +1,27 @@
+{
+  "name": "Qwant",
+  "manifest_version": 2,
+  "version": "1.0",
+  "hidden": true,
+
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "keyword": "@qwant",
+      "name": "Qwant",
+      "search_url": "https://www.qwant.com/",
+      "search_url_get_params": "q={searchTerms}",
+      "suggest_url": "https://api.qwant.com/api/suggest/",
+      "suggest_url_get_params": "client=opensearch&q={searchTerms}",
+      "search_form": "https://www.qwant.com/",
+      "is_default": true
+    }
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "qwant@example.com"
+    }
+  }
+
+}
+
